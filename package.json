@@ -6,7 +6,9 @@
   "homepage": "https://Nikolayhous.github.io/goit-js-hw-10-food-src",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-10-food-src/"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-10-food-src/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
