@@ -3,10 +3,10 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"VyiV":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.refs=void 0;const e={divThemeSwitchControl:document.querySelector(".theme-switch__control"),inputThemeSwitchToggle:document.querySelector(".theme-switch__toggle"),inputThemeSwitchToggleId:document.querySelector("#theme-switch-toggle"),labelThemeSwitchTrack:document.querySelector(".theme-switch__track"),divThemeSwitchMarker:document.querySelector(".theme-switch__marker"),ulJsMenu:document.querySelector(".menu js-menu"),body:document.querySelector("body")};exports.refs=e;
 },{}],"h8dS":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.onChangeThemeToBlack=r;var e=require("./refs");function r(r){"INPUT"===r.target.nodeName&&e.refs.body.classList.add("dark-theme")}
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.onChangeThemeToBlack=t;var e=require("./refs");function t(t){"INPUT"===t.target.nodeName&&e.refs.body.classList.add("dark-theme"),localStorage.setItem("theme-black",change)}
 },{"./refs":"VyiV"}],"lDTy":[function(require,module,exports) {
 "use strict";var e=require("./refs"),r=require("./change-theme-black");e.refs.inputThemeSwitchToggleId.addEventListener("change",r.onChangeThemeToBlack);
 },{"./refs":"VyiV","./change-theme-black":"h8dS"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/event"),require("./js/change-theme-black");
 },{"./sass/main.scss":"clu1","./js/event":"lDTy","./js/change-theme-black":"h8dS"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10-food-src/src.3662244f.js.map
+//# sourceMappingURL=/goit-js-hw-10-food-src/src.99022e9e.js.map
