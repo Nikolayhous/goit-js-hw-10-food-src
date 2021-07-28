@@ -2,7 +2,7 @@
 import {refs, Theme} from './refs'
   
 
-  refs.switch.addEventListener('change', populateInput);
+refs.switch.addEventListener('change', populateInput);
 
 function populateInput() {
   const check = refs.switch.checked;
