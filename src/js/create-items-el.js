@@ -12,4 +12,4 @@ export function createElement () {
 
       galleryUl.insertAdjacentHTML('beforeend', menuItem);
 
-
+console.log(galleryUl)

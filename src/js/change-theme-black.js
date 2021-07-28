@@ -1,27 +1,19 @@
 
+import {refs, Theme} from './refs'
+
+refs.switch.addEventListener('change', toChangeTheme);
 
 
-const inputThemeSwitchToggle = document.querySelector("#theme-switch-toggle");
-
-inputThemeSwitchToggle.addEventListener('change', onChangeThemeToBlack);
-
-function onChangeThemeToBlack(e) {
- if (e.target.nodeName === 'INPUT') {
-document.body.classList.toggle("dark-theme");
- }
+function toChangeTheme() {
+const check = refs.switch.checked;
+if(check) {
+refs.body.classList.add(Theme.DARK);
+refs.body.classList.remove(Theme.LIGHT);
+} else {
+  refs.body.classList.add(Theme.LIGHT);
+  refs.body.classList.remove(Theme.DARK);
 }
+};
 
-// populateInput()
-// export function onChangeThemeInput() {
-//     const onInputThemeBlack = e.target.change
-//     localStorage.setItem('theme-black',JSON.stringify(onInputThemeBlack));
-// }
 
-// function populateInput() {
-//     const savedChangeInput = localStorage.getItem('theme-black');
 
-//     if(savedChangeInput) {
-//         console.log(savedChangeInput);
-//         refs.inputThemeSwitchToggleId.change = savedChangeInput;
-//     }
-// }
